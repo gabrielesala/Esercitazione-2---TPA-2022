@@ -34,7 +34,10 @@ int main() {
         stan.set_h(stan.height);
         house[i].height = stan.get_l();
         cout<<"Enter number of people in the room: \n";
-        cin>>house[i].pep;
+        cin>>stan.pep;
+        stan.set_p(stan.pep);
+        house[i].pep = stan.pep;
+        house[i].height = stan.get_l();
         house[i].area = base.area(house[i].leng, house[i].wid);
         house[i].vol = stan.volume(house[i].leng, house[i].wid, house[i].height);
         pep_tot += house[i].pep;

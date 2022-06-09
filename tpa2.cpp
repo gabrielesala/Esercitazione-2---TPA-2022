@@ -40,6 +40,12 @@ void Room::set_h(double h){ //Function to get width of the room, returns error i
     this->height = h;
 }
 
+void Room::set_p(double p){ //Function to get width of the room, returns error if height <= 0
+    if(p < 0)
+        throw std::invalid_argument("Population must be non-negative.");
+    this->pep = p;
+}
+
  void Room::min_rooms(int n) //method to check if the user tries to input less than 4 rooms
 {
     if (n < 4)

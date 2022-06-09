@@ -40,6 +40,8 @@ public:
 
     void set_h(double height);
     double get_h() const {return height;}
+    void set_p(double p);
+    double get_p() const {return pep;}
 
     bool check(double pep, double area, double vol) const;
 
