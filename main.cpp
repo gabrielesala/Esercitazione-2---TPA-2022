@@ -29,15 +29,14 @@ int main() {
         cin>> stan.wid;
         base.set_w(stan.wid); //control function to avoid width <=0
         house[i].wid = stan.wid;
-        cout<<"Enter the height of walls: \n";
+        cout<<"Enter the height of the room: \n";
         cin>> stan.height; //control function to avoid height <=0
         stan.set_h(stan.height);
-        house[i].height = stan.get_l();
+        house[i].height = stan.get_h();
         cout<<"Enter number of people in the room: \n";
         cin>>stan.pep;
         stan.set_p(stan.pep);
         house[i].pep = stan.pep;
-        house[i].height = stan.get_l();
         house[i].area = base.area(house[i].leng, house[i].wid);
         house[i].vol = stan.volume(house[i].leng, house[i].wid, house[i].height);
         pep_tot += house[i].pep;
